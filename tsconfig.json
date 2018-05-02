@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs"
+        ,"target": "es6"
+        ,"noImplicitAny": false
+        ,"rootDir": "./src"
+        ,"outDir":"./bin"
+        ,"watch":true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+
+}
