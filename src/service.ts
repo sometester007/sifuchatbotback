@@ -16,7 +16,7 @@ app.use("/ws", wsRouter);
 
 const port=+process.env.PORT||3000;
 
-app.listen( port , 'localhost', () => {
+app.listen( port , () => {
     console.log('express server is starting at port 3000.....');
 })
 
