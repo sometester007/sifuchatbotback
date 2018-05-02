@@ -13,6 +13,7 @@ ws_express_1.app.all('*', function (req, res, next) {
 });
 ws_express_1.app.use("/chat", chatBot_1.chatBot);
 ws_express_1.app.use("/ws", webSocket_1.wsRouter);
-ws_express_1.app.listen(3000, 'localhost', () => {
+const port = +process.env.PORT || 3000;
+ws_express_1.app.listen(port, () => {
     console.log('express server is starting at port 3000.....');
 });
