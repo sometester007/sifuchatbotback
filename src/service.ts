@@ -14,9 +14,9 @@ app.all('*', function(req, res, next) {
 app.use("/chat", chatBot);
 app.use("/ws", wsRouter);
 
+const port=+process.env.PORT||3000;
 
-
-app.listen(3000, 'localhost', () => {
+app.listen( port , 'localhost', () => {
     console.log('express server is starting at port 3000.....');
 })
 
